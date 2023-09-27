@@ -21,7 +21,6 @@
 
 .signup-container {
   width: 100%;
-  background-color: #f0f2f5;
   min-height: 100vh;
   position: fixed;
 }
@@ -30,9 +29,68 @@
   width: 80%;
   margin: 10% auto;
   justify-content: space-around;
-  background-color: aqua;
 }
 
-.signup-left{
-    
+.signup-left {
+  width: 50%;
+  height: 400px;
+  font-size: 2em;
+  font-family: "myFontRegular";
+  color: #1c1e21;
+}
+
+.signup-left > h1 {
+  margin-top: 15%;
+  font-family: "myFontBold";
+  color: #1877f2;
+}
+
+.signup-right {
+  padding: 10px;
+  font-family: "myFontRegular";
+  width: 50%;
+  text-align: center;
+}
+.signup-right > div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+}
+.signup-right input {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+  font-size: 1.2em;
+}
+.signup-right p {
+  color: #1877f2;
+  margin-bottom: 25px;
+}
+.signup-btn-blue {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  color: #fff;
+  font-weight: 600;
+  margin: 25px auto;
+}
+.signup-btn-green {
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
