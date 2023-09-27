@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "myFontBold";
+  src: url(assests/fonts/SFPRODISPLAYBOLD.OTF);
+}
+@font-face {
+  font-family: "myFontMedium";
+  src: url(assests/fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face {
+  font-family: "myFontRegular";
+  src: url(assests/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* <!-- >>>>>> Sign Up Page <<<<<< --> */
+
+.signup-container {
+  width: 100%;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  position: fixed;
+}
+.signup-box {
+  display: flex;
+  width: 80%;
+  margin: 10% auto;
+  justify-content: space-around;
+  background-color: aqua;
+}
+
+.signup-left{
+    
+}
