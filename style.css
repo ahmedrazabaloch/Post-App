@@ -124,7 +124,20 @@ hr {
   margin: 7% auto;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
 }
-.post-box > div {
-  display: flex;
+.post-box > span {
+  font-family: "myFontBold";
+  font-size: 1.2em;
+}
+.hr {
+  width: 100%;
+  background-color: #dddfe2;
+  height: 1px;
+  margin: 10px 0;
+}
+#userPicture{
+  width: 30px;
+  height: 30px;
 }
