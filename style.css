@@ -24,6 +24,7 @@
   min-height: 100vh;
   position: fixed;
   background-color: #f0f2f5;
+  display: none;
 }
 .signup-box {
   display: flex;
@@ -103,6 +104,27 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
-hr{
+hr {
   margin-bottom: 25px;
+}
+
+/* <!-- >>>>>> Timeline <<<<<< --> */
+
+.post-container {
+  width: 100%;
+  background-color: #f0f2f5;
+  height: 619px;
+  position: fixed;
+}
+
+.post-box {
+  width: 450px;
+  height: 400px;
+  background-color: #fff;
+  margin: 7% auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.post-box > div {
+  display: flex;
 }
