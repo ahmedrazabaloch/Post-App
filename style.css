@@ -154,6 +154,7 @@ hr {
   border-radius: 5px;
   padding: 2px;
   background-color: #e4e6eb;
+  position: fixed;
 }
 .friends img {
   width: 12px;
