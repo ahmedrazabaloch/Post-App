@@ -91,7 +91,7 @@
   font-size: 20px;
   line-height: 48px;
   padding: 0 16px;
-  width: 332px;
+  width: 90%;
   color: #fff;
   font-weight: 600;
   margin: 25px auto;
@@ -175,16 +175,17 @@ hr {
   border: none;
   outline: none;
   font-size: 22px;
-  font-family: "myFontRegular";
-  font-weight: 100;
   margin: 10px 0;
-  height: 100px;
-  line-height: 22px;
-  word-break: normal;
+  height: 150px;
+  padding: 0 0 50px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  white-space: normal;
 }
 .bgPicture {
   position: relative;
-  top: 10%;
+  top: 2%;
 }
 .bgPicture img {
   width: 40px;
@@ -194,7 +195,7 @@ hr {
 }
 .btn-post {
   position: relative;
-  top: 15%;
+  top: 5%;
   width: 100%;
   padding: 10px;
   border: none;

@@ -2,9 +2,11 @@ var userName = document.getElementById("userName");
 var signup = document.querySelector(".signup-container");
 var post = document.querySelector(".post-container");
 var changedName = document.getElementById("changedName");
+var displayInput = document.getElementById("display");
 
 function login() {
   if (userName.value.trim() !== "") {
+    displayInput.placeholder = "What's on your mind, " + userName.value;
     changedName.innerHTML = userName.value;
     signup.style.display = "none";
     post.style.display = "block";
@@ -14,27 +16,12 @@ function login() {
 }
 
 function changeBG(event) {
-  var clickedImage = event.target; // Get the clicked image element
+  var clickedImage = event.target;
   var displayInput = document.getElementById("display");
 
   if (clickedImage && displayInput) {
-    // Get the source (src) attribute of the clicked image
-    var newBgColor = getComputedStyle(clickedImage).backgroundImage;
+    var newBgImage = clickedImage.getAttribute("src");
 
-    // Set the background color of the display input to the clicked image's background color
-    displayInput.style.backgroundImage = newBgColor;
+    displayInput.style.backgroundImage = 'url("' + newBgImage + '")';
   }
 }
-
-// function changeBG(event) {
-//   var clickedImage = event.target; // Get the clicked image element
-//   var displayInput = document.getElementById("display");
-
-//   if (clickedImage && displayInput) {
-//     // Get the source (src) attribute of the clicked image
-//     var newBgImage = clickedImage.getAttribute("src");
-
-//     // Set the value of the display input to the URL of the clicked image
-//     displayInput.value = newBgImage;
-//   }
-// }
