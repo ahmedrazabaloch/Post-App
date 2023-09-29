@@ -30,7 +30,6 @@
   min-height: 100vh;
   position: fixed;
   background-color: #f0f2f5;
-  display: none;
 }
 .signup-box {
   display: flex;
@@ -121,6 +120,7 @@ hr {
   background-color: #f0f2f5;
   height: 619px;
   position: fixed;
+  display: none;
 }
 
 .post-box {
@@ -161,7 +161,7 @@ hr {
   justify-content: center;
   margin: 0 5px;
 }
-#userName {
+#changedName {
   font-size: 16px;
   font-weight: 100;
   margin-bottom: 5px;
@@ -181,7 +181,7 @@ hr {
   line-height: 22px;
   word-break: normal;
 }
-.bgPicture{
+.bgPicture {
   position: relative;
   top: 10%;
 }
@@ -191,13 +191,13 @@ hr {
   margin: 0 2.5px;
   border-radius: 10px;
 }
-.btn-post{
+.btn-post {
   position: relative;
   top: 15%;
   width: 100%;
   padding: 10px;
   border: none;
   font-weight: 600;
-  color: #BFC3C7;
+  color: #bfc3c7;
   border-radius: 5px;
 }
