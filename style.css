@@ -15,9 +15,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "myFontRegular";
 }
 
 /* <!-- >>>>>> Sign Up Page <<<<<< --> */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
 
 .signup-container {
   width: 100%;
@@ -118,11 +124,11 @@ hr {
 }
 
 .post-box {
-  width: 450px;
+  width: 500px;
   height: 400px;
   background-color: #fff;
   margin: 7% auto;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
@@ -137,7 +143,38 @@ hr {
   height: 1px;
   margin: 10px 0;
 }
-#userPicture{
-  width: 30px;
-  height: 30px;
+#userPicture {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.friends {
+  font-size: 14px;
+  font-family: "myFontRegular";
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #e4e6eb;
+}
+.friends img {
+  width: 12px;
+  height: 12px;
+  justify-content: center;
+  margin: 0 5px;
+}
+#userName {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+.flex > div {
+  text-align: left;
+}
+#display {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 2em;
+  font-family: "myFontRegular";
+  font-weight: 100;
+  margin: 10px 0;
 }
