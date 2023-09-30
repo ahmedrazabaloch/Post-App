@@ -34,7 +34,7 @@
 .signup-box {
   display: flex;
   width: 80%;
-  margin: 10% auto;
+  margin: 0 auto;
   justify-content: space-around;
 }
 
@@ -50,6 +50,26 @@
   margin-top: 15%;
   font-family: "myFontBold";
   color: #1877f2;
+}
+
+#userImage {
+  width: 80px;
+  width: 120px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.btn-img {
+  background-color: #cad1e2;
+  padding: 5px 10px;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.center {
+  height: 35px;
+}
+#files {
+  visibility: hidden;
 }
 
 .signup-right {

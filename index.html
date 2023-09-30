@@ -12,13 +12,23 @@
     <div class="signup-container">
       <div class="signup-box">
         <div class="signup-left">
-          <h1>balochbook</h1>
+          <h1>Postbook</h1>
           <p>
-            Facebook helps you connect and share with the people in your life.
+            Postbook helps you connect and share with the people in your life.
           </p>
         </div>
         <div class="signup-right">
           <div>
+            <img id="userImage" src="assests/images/no-image.png" alt="" />
+            <div class="center">
+              <label for="files" class="btn-img">Browse Image</label>
+              <input
+                id="files"
+                type="file"
+                accept="image/*"
+                onchange="loadFile(event)"
+              />
+            </div>
             <input type="text" id="userName" placeholder="UserName" />
             <input type="password" placeholder="Password" />
             <button class="signup-btn-blue" onclick="login()">Log in</button>
