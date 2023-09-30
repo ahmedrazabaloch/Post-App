@@ -52,12 +52,42 @@ function changeBG(event) {
   }
 }
 
+// function posted() {
+//   var postUpdate = document.getElementById("postUpdate");
+//   var createDiv = document.createElement("div");
+//   var postUpdating = document.querySelector("#postUpdating");
+//   postUpdate.appendChild(createDiv);
+//   createDiv.setAttribute("id", "postUpdating");
+//   postUpdating.style.backgroundColor = "black";
+//   displayInput.value = "";
+// }
+
+
 function posted() {
   var postUpdate = document.getElementById("postUpdate");
   var createDiv = document.createElement("div");
   var postUpdating = document.querySelector("#postUpdating");
-  postUpdate.appendChild(createDiv);
-  createDiv.setAttribute("id", "postUpdating");
-  postUpdating.style.backgroundColor = "black";
+  
+  // Get the text and background image values
+  var textValue = displayInput.value;
+  var backgroundImage = displayInput.style.backgroundImage;
+
+  // Create a new div element for the post content
+  var postContent = document.createElement("div");
+  postContent.textContent = textValue;
+  postContent.style.backgroundImage = backgroundImage;
+  postContent.style.backgroundColor = "blue";
+  postContent.style.color = "white";
+
+  // Append the post content to the new div
+  createDiv.appendChild(postContent);
+
+  // Set the background color of the new div
+  createDiv.style.backgroundColor = "black";
+
+  // Clear the input value
   displayInput.value = "";
+
+  // Append the new div (post) to the postUpdate container
+  postUpdate.appendChild(createDiv);
 }
