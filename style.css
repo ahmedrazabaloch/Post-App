@@ -35,6 +35,8 @@
   width: 80%;
   margin: 0 auto;
   justify-content: space-around;
+  align-items: end;
+
 }
 
 .signup-left {
@@ -46,7 +48,7 @@
 }
 
 .signup-left > h1 {
-  margin-top: 15%;
+  /* margin-top: 15%; */
   font-family: "myFontBold";
   color: #1877f2;
 }
@@ -222,4 +224,5 @@ hr {
   font-weight: 600;
   color: #bfc3c7;
   border-radius: 5px;
+  cursor: pointer;
 }

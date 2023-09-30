@@ -59,7 +59,12 @@
             </div>
           </div>
         </div>
-        <input type="text" id="display" placeholder="What's on your mind?" />
+        <input
+          type="text"
+          id="display"
+          placeholder="What's on your mind?"
+          onkeypress="changeColors(event)"
+        />
         <div id="bgPicture" class="bgPicture">
           <img src="assests/images/bg1.png" onclick="changeBG(event)" />
           <img src="assests/images/bg2.png" onclick="changeBG(event)" />
@@ -70,7 +75,7 @@
           <img src="assests/images/bg7.png" onclick="changeBG(event)" />
           <img src="assests/images/bg8.png" onclick="changeBG(event)" />
         </div>
-        <button class="btn-post">Post</button>
+        <button class="btn-post" onclick="posted()">Post</button>
       </div>
     </div>
 
