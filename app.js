@@ -3,10 +3,16 @@ var signup = document.querySelector(".signup-container");
 var post = document.querySelector(".post-container");
 var changedName = document.getElementById("changedName");
 var displayInput = document.getElementById("display");
-var image = document.getElementById("userImage");
 
 function loadFile(event) {
-  image.src = URL.createObjectURL(event.target.files[0]);
+  var image = document.getElementById("userImage");
+  var userPicture = document.getElementById("userPicture");
+  var file = event.target.files[0];
+
+  if (file) {
+    image.src = URL.createObjectURL(file);
+    userPicture.src = URL.createObjectURL(file);
+  }
 }
 
 function login() {
