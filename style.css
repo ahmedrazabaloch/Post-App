@@ -26,9 +26,11 @@
 
 .signup-container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: fixed;
   background-color: #f0f2f5;
+    display: none;
+
 }
 .signup-box {
   display: flex;
@@ -36,7 +38,6 @@
   margin: 0 auto;
   justify-content: space-around;
   align-items: end;
-
 }
 
 .signup-left {
@@ -48,7 +49,6 @@
 }
 
 .signup-left > h1 {
-  /* margin-top: 15%; */
   font-family: "myFontBold";
   color: #1877f2;
 }
@@ -139,16 +139,16 @@ hr {
 .post-container {
   width: 100%;
   background-color: #f0f2f5;
-  height: 619px;
-  position: fixed;
-  display: none;
+  height: auto;
+  position: absolute;
+  /* display: none; */
 }
 
 .post-box {
   width: 500px;
   height: 400px;
   background-color: #fff;
-  margin: 7% auto;
+  margin: 7% auto 3%;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -176,7 +176,7 @@ hr {
   border-radius: 5px;
   padding: 2px;
   background-color: #e4e6eb;
-  position: fixed;
+  position: sticky;
 }
 .friends img {
   width: 12px;
@@ -225,4 +225,20 @@ hr {
   color: #bfc3c7;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#postUpdate {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f0f2f5;
+}
+#postUpdate > div {
+  width: 500px;
+  height: 400px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 10px auto;
+  border: 1px solid orange;
 }

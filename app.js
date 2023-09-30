@@ -18,16 +18,16 @@ function loadFile(event) {
 
 // >>>>>> Page change , update username & placeholder <<<<<<
 
-function login() {
-  if (userName.value.trim() !== "") {
-    displayInput.placeholder = "What's on your mind, " + userName.value;
-    changedName.innerHTML = userName.value;
-    signup.style.display = "none";
-    post.style.display = "block";
-  } else {
-    alert("Username can't be empty");
-  }
-}
+// function login() {
+//   if (userName.value.trim() !== "") {
+//     displayInput.placeholder = "What's on your mind, " + userName.value;
+//     changedName.innerHTML = userName.value;
+//     signup.style.display = "none";
+//     post.style.display = "block";
+//   } else {
+//     alert("Username can't be empty");
+//   }
+// }
 
 // <<<<<< Post button color chnage >>>>>>
 
@@ -52,4 +52,12 @@ function changeBG(event) {
   }
 }
 
-function posted() {}
+function posted() {
+  var postUpdate = document.getElementById("postUpdate");
+  var createDiv = document.createElement("div");
+  var postUpdating = document.querySelector("#postUpdating");
+  postUpdate.appendChild(createDiv);
+  createDiv.setAttribute("id", "postUpdating");
+  postUpdating.style.backgroundColor = "black";
+  displayInput.value = "";
+}
