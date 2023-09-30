@@ -3,9 +3,9 @@ var signup = document.querySelector(".signup-container");
 var post = document.querySelector(".post-container");
 var changedName = document.getElementById("changedName");
 var displayInput = document.getElementById("display");
+var image = document.getElementById("userImage");
 
 function loadFile(event) {
-  var image = document.getElementById("userImage");
   image.src = URL.createObjectURL(event.target.files[0]);
 }
 
@@ -15,11 +15,14 @@ function login() {
     changedName.innerHTML = userName.value;
     signup.style.display = "none";
     post.style.display = "block";
-    userImage.style.backgroundImage = document.getElementById("files").value;
-    console.log(userImage);
   } else {
     alert("Username can't be empty");
   }
+}
+
+function updateImage() {
+  var userpicture = document.getElementById("userpicture");
+  userpicture.style.backgroundImage = "src('assests/images/friends.png')";
 }
 
 function changeBG(event) {
