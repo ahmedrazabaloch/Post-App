@@ -29,7 +29,7 @@
   height: 100vh;
   position: fixed;
   background-color: #f0f2f5;
-  display: none;
+  /* display: none; */
 }
 .signup-box {
   display: flex;
@@ -138,11 +138,12 @@ hr {
 .post-container {
   width: 100%;
   background-color: #f0f2f5;
-  height: auto;
+  min-height: 100vh;
   position: absolute;
-  /* display: none; */
+  background-image: url(assests/images/fb-bg.png);
+  background-size: contain;
+  display: none;
 }
-
 .post-box {
   width: 500px;
   height: 400px;
@@ -176,6 +177,7 @@ hr {
   padding: 2px;
   background-color: #e4e6eb;
   position: sticky;
+  align-items: center;
 }
 .friends img {
   width: 12px;
@@ -184,7 +186,7 @@ hr {
   margin: 0 5px;
 }
 #changedName {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
   margin-bottom: 5px;
 }
@@ -231,7 +233,6 @@ hr {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: #f0f2f5;
 }
 #postUpdate > div {
   width: 500px;
