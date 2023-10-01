@@ -207,13 +207,28 @@ hr {
 .bgPicture {
   position: relative;
   top: 2%;
+  display: flex;
 }
-.bgPicture img {
+.bgPicture > img {
   width: 40px;
   height: 40px;
   margin: 0 2.5px;
   border-radius: 10px;
+  cursor: pointer;
 }
+.white, .black {
+  width: 40px;
+  height: 40px;
+  margin: 0 2.5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.black {
+  background-color: #000;
+  color: #fff;
+}
+
 .btn-post {
   position: relative;
   top: 5%;

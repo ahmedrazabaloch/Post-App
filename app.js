@@ -56,6 +56,7 @@ function changeBG(event) {
 
 function posted() {
   var createDiv = document.createElement("div");
+  createDiv.setAttribute = ("id", "postingDiv");
   var textValue = displayInput.value;
   var backgroundImage = displayInput.style.backgroundImage;
   createDiv.textContent = textValue;
