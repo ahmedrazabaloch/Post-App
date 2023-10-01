@@ -29,8 +29,7 @@
   height: 100vh;
   position: fixed;
   background-color: #f0f2f5;
-    display: none;
-
+  display: none;
 }
 .signup-box {
   display: flex;
@@ -237,8 +236,10 @@ hr {
   width: 500px;
   height: 400px;
   padding: 15px;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
   text-align: center;
   margin: 10px auto;
-  border: 1px solid orange;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
