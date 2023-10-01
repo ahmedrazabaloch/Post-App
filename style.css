@@ -207,7 +207,6 @@ hr {
 .bgPicture {
   position: relative;
   top: 2%;
-  display: flex;
 }
 .bgPicture > img {
   width: 40px;
@@ -216,19 +215,6 @@ hr {
   border-radius: 10px;
   cursor: pointer;
 }
-.white, .black {
-  width: 40px;
-  height: 40px;
-  margin: 0 2.5px;
-  border-radius: 10px;
-  cursor: pointer;
-  border: 1px solid black;
-}
-.black {
-  background-color: #000;
-  color: #fff;
-}
-
 .btn-post {
   position: relative;
   top: 5%;
@@ -250,11 +236,15 @@ hr {
 #postUpdate > div {
   width: 500px;
   height: 400px;
-  padding: 15px;
+  padding: 40px 15px 15px;
   color: #000;
   background-color: #fff;
   text-align: center;
   margin: 10px auto;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  font-size: 2.5em;
+  overflow: hidden;
 }
