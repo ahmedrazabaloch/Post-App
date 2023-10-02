@@ -25,7 +25,15 @@ function login() {
     signup.style.display = "none";
     post.style.display = "block";
   } else {
-    alert("Username can't be empty");
+    Swal.fire({
+      title: "UserName can't be empty",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
   }
 }
 
