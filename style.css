@@ -143,7 +143,8 @@ button {
   color: #1877f2;
   margin-bottom: 25px;
 }
-.signup-btn-blue {
+.signup-btn-blue,
+.signup-btn-green {
   background-color: #1877f2;
   border: none;
   border-radius: 6px;
@@ -152,21 +153,11 @@ button {
   padding: 0 16px;
   width: 90%;
   color: #fff;
-  font-weight: 600;
   margin: 25px auto;
   cursor: pointer;
 }
 .signup-btn-green {
-  border: none;
-  border-radius: 6px;
-  font-size: 17px;
-  line-height: 48px;
-  padding: 0 16px;
   background-color: #42b72a;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 20px;
-  cursor: pointer;
 }
 hr {
   margin-bottom: 25px;
