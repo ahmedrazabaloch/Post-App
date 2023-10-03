@@ -53,11 +53,15 @@
 }
 
 #userImage {
-  width: 80px;
   width: 120px;
-  margin-bottom: 10px;
+  height: 120px;
+  margin-bottom: 15px;
   background-color: transparent;
+  border-radius: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+
 }
+
 .btn-img {
   background-color: #cad1e2;
   padding: 5px 10px;
@@ -77,6 +81,7 @@
   font-family: "myFontRegular";
   width: 50%;
   text-align: center;
+  position: relative;
 }
 .signup-right > div {
   width: 80%;
@@ -95,10 +100,10 @@
   border: 1px solid #dddfe2;
   font-size: 1.2em;
   outline-color: #1877f2;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease;
 }
 .signup-right input:focus {
-  box-shadow: 1px 1px 5px #3b89f0;
+  box-shadow: 1px 1px 10px #3b89f0;
   outline-color: #1877f2;
 }
 
@@ -233,6 +238,7 @@ hr {
   color: #bfc3c7;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
 
 #postUpdate {
