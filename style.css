@@ -176,7 +176,7 @@ hr {
   border-radius: 5px;
   padding: 2px;
   background-color: #e4e6eb;
-  position: sticky;
+  position: absolute;
   align-items: center;
 }
 .friends img {
@@ -248,4 +248,10 @@ hr {
   background-position: center;
   font-size: 2.5em;
   overflow: hidden;
+
+}
+.swal2-confirm {
+  background-color: #1877f2 !important;
+  color: #fff !important;
+  border: none !important;
 }

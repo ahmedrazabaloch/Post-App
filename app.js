@@ -3,7 +3,7 @@ var signup = document.querySelector(".signup-container"); // signup page contain
 var post = document.querySelector(".post-container"); // post page container
 var changedName = document.getElementById("changedName"); // inside page showing username
 var displayInput = document.getElementById("display"); // display area
-
+var password = document.getElementById("password");
 // <<<<<< User upload a picture >>>>>>
 
 function loadFile(event) {
@@ -20,10 +20,22 @@ function loadFile(event) {
 
 function login() {
   if (userName.value.trim() !== "") {
-    displayInput.placeholder = "What's on your mind, " + userName.value;
-    changedName.innerHTML = userName.value;
-    signup.style.display = "none";
-    post.style.display = "block";
+    if (password.value.trim() !== "") {
+      displayInput.placeholder = "What's on your mind, " + userName.value;
+      changedName.innerHTML = userName.value;
+      signup.style.display = "none";
+      post.style.display = "block";
+    } else {
+      Swal.fire({
+        title: "Password can't be empty",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+    }
   } else {
     Swal.fire({
       title: "UserName can't be empty",
