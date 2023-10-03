@@ -176,7 +176,7 @@ hr {
 }
 .post-box {
   width: 500px;
-  height: 400px;
+  height: 440px;
   background-color: #fff;
   margin: 7% auto 3%;
   border-radius: 10px;
@@ -254,10 +254,9 @@ hr {
 .btn-post {
   position: relative;
   top: 5%;
-  width: 100%;
+  width: 92%;
   padding: 10px;
   border: none;
-  font-weight: 600;
   color: #bfc3c7;
   border-radius: 5px;
   cursor: pointer;
@@ -270,9 +269,8 @@ hr {
   margin: 0 auto;
 }
 #postUpdate > div {
-  width: 500px;
-  height: 400px;
-  padding: 40px 15px 15px;
+  width: 490px;
+  height: 390px;
   color: #000;
   background-color: #fff;
   text-align: center;
