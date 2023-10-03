@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- >>>>>> User Form Page <<<<<< -->
+
+    <form class="formContainer">
+      <input type="text" placeholder="User Name" required />
+      <input type="email" placeholder="Email address" required />
+      <input type="password" required />
+      <button onclick="formsubmit()">Submit</button>
+    </form>
+
     <!-- >>>>>> Sign Up Page <<<<<< -->
 
     <div class="signup-container">
@@ -39,7 +48,7 @@
             <button class="signup-btn-blue" onclick="login()">Log in</button>
             <p>Forgotten Password?</p>
             <hr />
-            <button class="signup-btn-green">Create new account</button>
+            <button class="signup-btn-green" onclick="create()">Create new account</button>
           </div>
         </div>
       </div>

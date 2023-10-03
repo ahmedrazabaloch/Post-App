@@ -18,6 +18,32 @@
   font-family: "myFontRegular";
 }
 
+/* <!-- >>>>>> User Form Page <<<<<< --> */
+
+.formContainer {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+  border: 1px solid orange;
+  align-items: center;
+  row-gap: 10px;
+  background-color: #fff;
+}
+
+.formContainer > input,
+button {
+  width: 60%;
+  height: 2.5em;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #f0f2f5;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
 /* <!-- >>>>>> Sign Up Page <<<<<< --> */
 
 .flex {
@@ -59,7 +85,6 @@
   background-color: transparent;
   border-radius: 100px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-
 }
 
 .btn-img {
