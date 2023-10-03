@@ -4,6 +4,14 @@ var post = document.querySelector(".post-container"); // post page container
 var changedName = document.getElementById("changedName"); // inside page showing username
 var displayInput = document.getElementById("display"); // display area
 var password = document.getElementById("password");
+
+// <!-- >>>>>> User Form Page <<<<<< -->
+
+function create() {
+  var formContainer = document.querySelector(".formContainer");
+  formContainer.style.display = "block";
+}
+
 // <<<<<< User upload a picture >>>>>>
 
 function loadFile(event) {

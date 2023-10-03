@@ -21,27 +21,28 @@
 /* <!-- >>>>>> User Form Page <<<<<< --> */
 
 .formContainer {
+  display: none;
   width: 40%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  position: absolute;
   padding: 40px;
-  border: 1px solid orange;
-  align-items: center;
-  row-gap: 10px;
   background-color: #fff;
+  z-index: 2;
+  top: 10%;
+  left: 28%;
+  text-align: center;
+  
 }
 
 .formContainer > input,
 button {
-  width: 60%;
+  width: 90%;
   height: 2.5em;
   border-radius: 5px;
   outline: none;
   border: 1px solid #f0f2f5;
   font-size: 1.3em;
   padding: 10px;
+  margin: 5px 0;
 }
 
 /* <!-- >>>>>> Sign Up Page <<<<<< --> */
