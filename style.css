@@ -22,15 +22,15 @@
 
 .formContainer {
   display: none;
-  width: 40%;
+  width: 30%;
   position: absolute;
   padding: 40px;
-  background-color: #fff;
+  background-color: #f0f2f5;
   z-index: 2;
   top: 10%;
-  left: 28%;
+  left: 30%;
   text-align: center;
-  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .formContainer > input,
@@ -38,11 +38,17 @@ button {
   width: 90%;
   height: 2.5em;
   border-radius: 5px;
-  outline: none;
-  border: 1px solid #f0f2f5;
+  outline-color: #1877f2;
+  border: 1px solid #dddfe2;
   font-size: 1.3em;
   padding: 10px;
   margin: 5px 0;
+  transition: 0.4s ease;
+}
+.formContainer > button {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
 }
 
 /* <!-- >>>>>> Sign Up Page <<<<<< --> */
