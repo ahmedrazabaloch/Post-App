@@ -15,6 +15,12 @@ function create() {
   }, 4000);
 }
 
+// function getValue() {
+//   var formUserName = document.getElementById("formUserName").value;
+//   console.log(formUserName);
+//   console.log("working")
+// }
+
 // <<<<<< User upload a picture >>>>>>
 
 function loadFile(event) {

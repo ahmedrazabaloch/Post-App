@@ -281,6 +281,7 @@ hr {
   background-position: center;
   font-size: 2.5em;
   overflow: hidden;
+  padding: 50px 10px;
 }
 .swal2-confirm {
   background-color: #1877f2 !important;
