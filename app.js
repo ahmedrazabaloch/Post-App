@@ -68,11 +68,15 @@ function login() {
 
 // <<<<<< Post button color chnage >>>>>>
 
-function changeColors(event) {
-  if (event) {
-    var changeColor = document.querySelector(".btn-post");
+var changeColor = document.querySelector(".btn-post");
+
+function changeColors() {
+  if (displayInput) {
     changeColor.style.backgroundColor = "#0861F2";
     changeColor.style.color = "#fff";
+  } else {
+    changeColor.style.backgroundColor = "#F0F0F0";
+    changeColor.style.color = "#bfc3c7";
   }
 }
 
