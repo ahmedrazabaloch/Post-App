@@ -35,36 +35,36 @@ function loadFile(event) {
 
 // >>>>>> Page change , update username & placeholder <<<<<<
 
-function login() {
-  if (userName.value.trim() !== "") {
-    if (password.value.trim() !== "") {
-      displayInput.placeholder = "What's on your mind, " + userName.value;
-      changedName.innerHTML = userName.value;
-      signup.style.display = "none";
-      post.style.display = "block";
-    } else {
-      Swal.fire({
-        title: "Password can't be empty",
-        showClass: {
-          popup: "animate__animated animate__fadeInDown",
-        },
-        hideClass: {
-          popup: "animate__animated animate__fadeOutUp",
-        },
-      });
-    }
-  } else {
-    Swal.fire({
-      title: "UserName can't be empty",
-      showClass: {
-        popup: "animate__animated animate__fadeInDown",
-      },
-      hideClass: {
-        popup: "animate__animated animate__fadeOutUp",
-      },
-    });
-  }
-}
+// function login() {
+//   if (userName.value.trim() !== "") {
+//     if (password.value.trim() !== "") {
+//       displayInput.placeholder = "What's on your mind, " + userName.value;
+//       changedName.innerHTML = userName.value;
+//       signup.style.display = "none";
+//       post.style.display = "block";
+//     } else {
+//       Swal.fire({
+//         title: "Password can't be empty",
+//         showClass: {
+//           popup: "animate__animated animate__fadeInDown",
+//         },
+//         hideClass: {
+//           popup: "animate__animated animate__fadeOutUp",
+//         },
+//       });
+//     }
+//   } else {
+//     Swal.fire({
+//       title: "UserName can't be empty",
+//       showClass: {
+//         popup: "animate__animated animate__fadeInDown",
+//       },
+//       hideClass: {
+//         popup: "animate__animated animate__fadeOutUp",
+//       },
+//     });
+//   }
+// }
 
 // <<<<<< Post button color chnage >>>>>>
 
@@ -90,6 +90,12 @@ function changeBG(event) {
     var newBgImage = clickedImage.getAttribute("src");
     displayInput.style.backgroundImage = 'url("' + newBgImage + '")';
   }
+}
+
+// <<<<<< fore Color Changing >>>>>>
+
+function choiceColor() {
+  document.getElementById("foreColor").click();
 }
 
 // <<<<<< Update Post >>>>>>
