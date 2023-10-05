@@ -92,11 +92,22 @@ function changeBG(event) {
 
 function posted() {
   var createDiv = document.createElement("div");
-  createDiv.setAttribute = ("id", "postingDiv");
   var textValue = displayInput.value;
-  var backgroundImage = displayInput.style.backgroundImage;
-  createDiv.textContent = textValue;
-  createDiv.style.backgroundImage = backgroundImage;
-  displayInput.value = "";
-  postUpdate.appendChild(createDiv);
+  if (displayInput.value === "") {
+    Swal.fire({
+      title: "Empty post can't be generated",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  } else {
+    var backgroundImage = displayInput.style.backgroundImage;
+    createDiv.textContent = textValue;
+    createDiv.style.backgroundImage = backgroundImage;
+    displayInput.value = "";
+    postUpdate.appendChild(createDiv);
+  }
 }
