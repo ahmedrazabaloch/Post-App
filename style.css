@@ -176,7 +176,7 @@ hr {
 }
 .post-box {
   width: 500px;
-  height: 440px;
+  height: auto;
   background-color: #fff;
   margin: 7% auto 3%;
   border-radius: 10px;
