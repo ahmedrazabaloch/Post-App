@@ -1,12 +1,6 @@
-var userName = document.getElementById("userName"); // username
-var signup = document.querySelector(".signup-container"); // signup page container
-var post = document.querySelector(".post-container"); // post page container
-var changedName = document.getElementById("changedName"); // inside page showing username
-var displayInput = document.getElementById("display"); // display area
-var password = document.getElementById("password"); // getting password filed
-var formContainer = document.querySelector(".formContainer"); // Show sign up page
-
 // <!-- >>>>>> User Form Page <<<<<< -->
+
+var formContainer = document.querySelector(".formContainer");
 
 function create() {
   formContainer.style.display = "block";
@@ -15,6 +9,7 @@ function create() {
   }, 4000);
 }
 
+// var userName = document.getElementById("userName"); // username
 // function getValue() {
 //   var formUserName = document.getElementById("formUserName").value;
 //   console.log(formUserName);
@@ -34,6 +29,11 @@ function loadFile(event) {
 }
 
 // >>>>>> Page change , update username & placeholder <<<<<<
+
+var signup = document.querySelector(".signup-container");
+var post = document.querySelector(".post-container");
+var changedName = document.getElementById("changedName");
+var password = document.getElementById("password");
 
 // function login() {
 //   if (userName.value.trim() !== "") {
@@ -74,13 +74,12 @@ function changeColors() {
   if (displayInput) {
     changeColor.style.backgroundColor = "#0861F2";
     changeColor.style.color = "#fff";
-  } else {
-    changeColor.style.backgroundColor = "#F0F0F0";
-    changeColor.style.color = "#bfc3c7";
   }
 }
 
 // <<<<<< Changing post backgroundImage >>>>>>
+
+var displayInput = document.getElementById("display");
 
 function changeBG(event) {
   var clickedImage = event.target;
@@ -94,8 +93,11 @@ function changeBG(event) {
 
 // <<<<<< fore Color Changing >>>>>>
 
+var foreColor = document.getElementById("foreColor");
+
 function choiceColor() {
-  document.getElementById("foreColor").click();
+  foreColor.click();
+  console.log(foreColor.value)
 }
 
 // <<<<<< Update Post >>>>>>
