@@ -35,36 +35,36 @@ var post = document.querySelector(".post-container");
 var changedName = document.getElementById("changedName");
 var password = document.getElementById("password");
 
-// function login() {
-//   if (userName.value.trim() !== "") {
-//     if (password.value.trim() !== "") {
-//       displayInput.placeholder = "What's on your mind, " + userName.value;
-//       changedName.innerHTML = userName.value;
-//       signup.style.display = "none";
-//       post.style.display = "block";
-//     } else {
-//       Swal.fire({
-//         title: "Password can't be empty",
-//         showClass: {
-//           popup: "animate__animated animate__fadeInDown",
-//         },
-//         hideClass: {
-//           popup: "animate__animated animate__fadeOutUp",
-//         },
-//       });
-//     }
-//   } else {
-//     Swal.fire({
-//       title: "UserName can't be empty",
-//       showClass: {
-//         popup: "animate__animated animate__fadeInDown",
-//       },
-//       hideClass: {
-//         popup: "animate__animated animate__fadeOutUp",
-//       },
-//     });
-//   }
-// }
+function login() {
+  if (userName.value.trim() !== "") {
+    if (password.value.trim() !== "") {
+      displayInput.placeholder = "What's on your mind, " + userName.value;
+      changedName.innerHTML = userName.value;
+      signup.style.display = "none";
+      post.style.display = "block";
+    } else {
+      Swal.fire({
+        title: "Password can't be empty",
+        showClass: {
+          popup: "animate__animated animate__fadeInDown",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutUp",
+        },
+      });
+    }
+  } else {
+    Swal.fire({
+      title: "UserName can't be empty",
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  }
+}
 
 // <<<<<< Post button color chnage >>>>>>
 
@@ -93,11 +93,18 @@ function changeBG(event) {
 
 // <<<<<< fore Color Changing >>>>>>
 
-var foreColor = document.getElementById("foreColor");
+// var foreColor = document.getElementById("foreColor");
 
-function choiceColor() {
-  foreColor.click();
-  console.log(foreColor.value)
+// function choiceColor() {
+//   foreColor.click();
+//   console.log(foreColor.value);
+// }
+var foreColor = document.getElementById("foreColor").value;
+var text = displayInput.textContent;
+function fontColor() {
+  text.style.color = foreColor;
+  console.log(text);
+  console.log(foreColor);
 }
 
 // <<<<<< Update Post >>>>>>

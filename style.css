@@ -62,7 +62,7 @@ button {
   height: 100vh;
   position: fixed;
   background-color: #f0f2f5;
-  display: none;
+  /* display: none; */
 }
 .signup-box {
   display: flex;
@@ -172,7 +172,7 @@ hr {
   position: absolute;
   background-image: url(assests/images/fb-bg.png);
   background-size: contain;
-  /* display: none; */
+  display: none;
 }
 .post-box {
   width: 500px;
