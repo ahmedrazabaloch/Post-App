@@ -93,8 +93,6 @@ var foreColor = document.getElementById("color").value;
 function posted() {
   var createDiv = document.createElement("div");
   var textValue = displayInput.value;
-  textValue.style.fontSize = "34px";
-  console.log(textValue);
   if (displayInput.value === "") {
     Swal.fire({
       title: "Empty post can't be generated",
