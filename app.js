@@ -9,13 +9,6 @@ function create() {
   }, 4000);
 }
 
-// var userName = document.getElementById("userName"); // username
-// function getValue() {
-//   var formUserName = document.getElementById("formUserName").value;
-//   console.log(formUserName);
-//   console.log("working")
-// }
-
 // <<<<<< User upload a picture >>>>>>
 
 function loadFile(event) {
@@ -92,20 +85,6 @@ function changeBG(event) {
 }
 
 // <<<<<< fore Color Changing >>>>>>
-
-// var foreColor = document.getElementById("foreColor");
-
-// function choiceColor() {
-//   foreColor.click();
-//   console.log(foreColor.value);
-// }
-var foreColor = document.getElementById("foreColor").value;
-var text = displayInput.textContent;
-function fontColor() {
-  text.style.color = foreColor;
-  console.log(text);
-  console.log(foreColor);
-}
 
 // <<<<<< Update Post >>>>>>
 
