@@ -239,6 +239,9 @@ hr {
 .bgPicture {
   position: relative;
   top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bgPicture > img {
   width: 40px;
@@ -287,4 +290,7 @@ hr {
   background-color: #1877f2 !important;
   color: #fff !important;
   border: none !important;
+}
+label > img {
+  cursor: url("assests/images/color-picker.png"),auto;
 }

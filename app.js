@@ -84,15 +84,16 @@ function changeBG(event) {
   }
 }
 
-// <<<<<< fore Color Changing >>>>>>
+// <<<<<< Update Post & Changing foreColor>>>>>>
 
-var foreColor = document.getElementById("color").value;
+var foreColor = document.getElementById("color");
 
-// <<<<<< Update Post >>>>>>
+function colorChaning() {
+  displayInput.style.color = foreColor.value;
+}
 
 function posted() {
   var createDiv = document.createElement("div");
-  var textValue = displayInput.value;
   if (displayInput.value === "") {
     Swal.fire({
       title: "Empty post can't be generated",
@@ -105,7 +106,7 @@ function posted() {
     });
   } else {
     var backgroundImage = displayInput.style.backgroundImage;
-    createDiv.textContent = textValue;
+    createDiv.textContent = displayInput.value;
     createDiv.style.backgroundImage = backgroundImage;
     displayInput.value = "";
     postUpdate.appendChild(createDiv);
