@@ -170,8 +170,7 @@ hr {
   background-color: #f0f2f5;
   min-height: 100vh;
   position: absolute;
-  background-image: url(assests/images/fb-bg.png);
-  background-size: contain;
+  background: linear-gradient(#00c6ff, #0078ff);
   /* display: none; */
 }
 .post-box {
@@ -292,5 +291,5 @@ hr {
   border: none !important;
 }
 label > img {
-  cursor: url("assests/images/color-picker.png"),auto;
+  cursor: url("assests/images/color-picker.png"), auto;
 }
