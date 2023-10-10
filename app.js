@@ -107,6 +107,7 @@ function posted() {
   } else {
     var backgroundImage = displayInput.style.backgroundImage;
     createDiv.textContent = displayInput.value;
+    createDiv.style.color = foreColor.value;
     createDiv.style.backgroundImage = backgroundImage;
     displayInput.value = "";
     postUpdate.appendChild(createDiv);
